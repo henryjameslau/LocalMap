@@ -1,0 +1,13 @@
+{"ons":{
+"varlabel": ["Total weekly income"],
+"varcolour": ["#234d70","#5f6b89","#948ca4","#c8aebe","#ffd1d9"],
+"varname": ["Total_weekly_income"],
+"varload": ["Total_weekly_income"],
+"varunit":["£"],
+"varprefix":["","","",""],
+"breaks":[[340,610,750,900,1100,1710]],
+"average":[1500],
+"averagelabel":"E&W",
+"centre":[50.8625574, -1.2463228],
+"zoom":13
+}}

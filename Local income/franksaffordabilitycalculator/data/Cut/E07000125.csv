@@ -1,0 +1,9 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02005278","Rossendale 001","E07000125","Rossendale","E12000002","North West",860,980,760,220
+"E02005279","Rossendale 002","E07000125","Rossendale","E12000002","North West",600,680,530,150
+"E02005280","Rossendale 003","E07000125","Rossendale","E12000002","North West",630,710,560,160
+"E02005281","Rossendale 004","E07000125","Rossendale","E12000002","North West",700,790,620,170
+"E02005284","Rossendale 007","E07000125","Rossendale","E12000002","North West",820,930,720,210
+"E02005285","Rossendale 008","E07000125","Rossendale","E12000002","North West",790,900,700,200
+"E02005286","Rossendale 009","E07000125","Rossendale","E12000002","North West",670,760,590,170
+"E02006884","Rossendale 010","E07000125","Rossendale","E12000002","North West",590,660,520,150

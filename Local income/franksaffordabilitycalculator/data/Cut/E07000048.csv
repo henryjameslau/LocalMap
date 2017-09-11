@@ -1,0 +1,8 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02004236","Christchurch 001","E07000048","Christchurch","E12000009","South West",720,810,630,180
+"E02004237","Christchurch 002","E07000048","Christchurch","E12000009","South West",750,850,660,190
+"E02004238","Christchurch 003","E07000048","Christchurch","E12000009","South West",620,710,540,170
+"E02004239","Christchurch 004","E07000048","Christchurch","E12000009","South West",690,780,600,180
+"E02004240","Christchurch 005","E07000048","Christchurch","E12000009","South West",640,730,570,170
+"E02004241","Christchurch 006","E07000048","Christchurch","E12000009","South West",670,760,590,170
+"E02004242","Christchurch 007","E07000048","Christchurch","E12000009","South West",650,740,570,170

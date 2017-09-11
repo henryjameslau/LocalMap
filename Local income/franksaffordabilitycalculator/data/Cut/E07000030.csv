@@ -1,0 +1,8 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02004008","Eden 001","E07000030","Eden","E12000002","North West",740,840,650,190
+"E02004009","Eden 002","E07000030","Eden","E12000002","North West",830,940,730,210
+"E02004010","Eden 003","E07000030","Eden","E12000002","North West",630,720,550,170
+"E02004011","Eden 004","E07000030","Eden","E12000002","North West",700,800,620,180
+"E02004012","Eden 005","E07000030","Eden","E12000002","North West",780,890,680,210
+"E02004013","Eden 006","E07000030","Eden","E12000002","North West",700,800,620,180
+"E02004014","Eden 007","E07000030","Eden","E12000002","North West",710,810,620,190

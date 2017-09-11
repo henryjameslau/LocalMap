@@ -1,0 +1,10 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02005212","Hyndburn 001","E07000120","Hyndburn","E12000002","North West",570,650,500,150
+"E02005213","Hyndburn 002","E07000120","Hyndburn","E12000002","North West",670,750,590,170
+"E02005214","Hyndburn 003","E07000120","Hyndburn","E12000002","North West",640,730,570,160
+"E02005215","Hyndburn 004","E07000120","Hyndburn","E12000002","North West",510,580,440,130
+"E02005216","Hyndburn 005","E07000120","Hyndburn","E12000002","North West",590,670,520,150
+"E02005217","Hyndburn 006","E07000120","Hyndburn","E12000002","North West",520,620,430,190
+"E02005218","Hyndburn 007","E07000120","Hyndburn","E12000002","North West",570,640,500,140
+"E02005219","Hyndburn 008","E07000120","Hyndburn","E12000002","North West",660,750,580,170
+"E02005220","Hyndburn 009","E07000120","Hyndburn","E12000002","North West",670,750,590,170

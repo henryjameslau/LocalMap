@@ -1,0 +1,10 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"W02000001","Isle of Anglesey 001","W06000001","Isle of Anglesey","W92000004","Wales",560,640,500,140
+"W02000002","Isle of Anglesey 002","W06000001","Isle of Anglesey","W92000004","Wales",600,680,530,160
+"W02000003","Isle of Anglesey 003","W06000001","Isle of Anglesey","W92000004","Wales",420,490,360,120
+"W02000004","Isle of Anglesey 004","W06000001","Isle of Anglesey","W92000004","Wales",590,670,520,150
+"W02000005","Isle of Anglesey 005","W06000001","Isle of Anglesey","W92000004","Wales",630,720,550,160
+"W02000006","Isle of Anglesey 006","W06000001","Isle of Anglesey","W92000004","Wales",620,700,540,160
+"W02000007","Isle of Anglesey 007","W06000001","Isle of Anglesey","W92000004","Wales",610,690,540,160
+"W02000008","Isle of Anglesey 008","W06000001","Isle of Anglesey","W92000004","Wales",710,810,620,180
+"W02000009","Isle of Anglesey 009","W06000001","Isle of Anglesey","W92000004","Wales",650,730,570,170

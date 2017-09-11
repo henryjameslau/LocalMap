@@ -1,0 +1,9 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02006534","Adur 001","E07000223","Adur","E12000008","South East",790,900,700,190
+"E02006535","Adur 002","E07000223","Adur","E12000008","South East",920,1040,810,220
+"E02006536","Adur 003","E07000223","Adur","E12000008","South East",810,910,710,200
+"E02006537","Adur 004","E07000223","Adur","E12000008","South East",730,820,640,180
+"E02006538","Adur 005","E07000223","Adur","E12000008","South East",860,980,760,210
+"E02006539","Adur 006","E07000223","Adur","E12000008","South East",700,790,620,170
+"E02006540","Adur 007","E07000223","Adur","E12000008","South East",670,760,590,170
+"E02006541","Adur 008","E07000223","Adur","E12000008","South East",660,750,580,170

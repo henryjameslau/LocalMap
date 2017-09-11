@@ -1,0 +1,11 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02006217","Tamworth 001","E07000199","Tamworth","E12000005","West Midlands",680,770,590,180
+"E02006218","Tamworth 002","E07000199","Tamworth","E12000005","West Midlands",530,600,460,140
+"E02006219","Tamworth 003","E07000199","Tamworth","E12000005","West Midlands",690,790,610,170
+"E02006220","Tamworth 004","E07000199","Tamworth","E12000005","West Midlands",600,680,530,150
+"E02006221","Tamworth 005","E07000199","Tamworth","E12000005","West Midlands",830,950,730,220
+"E02006222","Tamworth 006","E07000199","Tamworth","E12000005","West Midlands",600,680,530,150
+"E02006223","Tamworth 007","E07000199","Tamworth","E12000005","West Midlands",510,580,440,140
+"E02006224","Tamworth 008","E07000199","Tamworth","E12000005","West Midlands",750,860,660,200
+"E02006225","Tamworth 009","E07000199","Tamworth","E12000005","West Midlands",750,850,660,190
+"E02006226","Tamworth 010","E07000199","Tamworth","E12000005","West Midlands",750,860,660,200

@@ -1,0 +1,11 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02004741","Gosport 001","E07000088","Gosport","E12000008","South East",750,850,660,190
+"E02004742","Gosport 002","E07000088","Gosport","E12000008","South East",700,790,620,170
+"E02004743","Gosport 003","E07000088","Gosport","E12000008","South East",810,920,720,200
+"E02004744","Gosport 004","E07000088","Gosport","E12000008","South East",790,900,690,210
+"E02004745","Gosport 005","E07000088","Gosport","E12000008","South East",750,840,660,190
+"E02004746","Gosport 006","E07000088","Gosport","E12000008","South East",830,940,730,210
+"E02004747","Gosport 007","E07000088","Gosport","E12000008","South East",740,840,650,180
+"E02004748","Gosport 008","E07000088","Gosport","E12000008","South East",650,740,570,170
+"E02004749","Gosport 009","E07000088","Gosport","E12000008","South East",980,1140,850,290
+"E02004750","Gosport 010","E07000088","Gosport","E12000008","South East",850,960,750,210

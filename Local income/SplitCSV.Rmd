@@ -1,0 +1,28 @@
+---
+title: "Split csv into individual csv based on column"
+author: "Henry Lau"
+date: "1 September 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Split data for each LA
+
+```{r}
+totalweeklyincome <- read.csv("/Library/WebServer/documents/Henry/Local income/income.csv")
+View(totalweeklyincome)
+for (name in levels(totalweeklyincome$LAD13code)){
+  #Subset the data by MP
+  tmp=subset(totalweeklyincome,LAD13code==name)
+  #Create a new filename for each MP - the folder 'cut' should already exist
+  fn=paste('/Library/WebServer/documents/Henry/Local income/cut/',gsub(' ','',name),sep='','.csv')
+  #Save the CSV file containing separate expenses data for each MP
+  write.csv(tmp,fn,row.names=FALSE)
+  }
+```
+
+
+Source: [Splitting a Large CSV File into Separate Smaller Files Based on Values Within a Specific Column](https://www.r-bloggers.com/splitting-a-large-csv-file-into-separate-smaller-files-based-on-values-within-a-specific-column/)

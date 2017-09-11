@@ -1,0 +1,9 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02004000","Copeland 001","E07000029","Copeland","E12000002","North West",650,740,570,160
+"E02004001","Copeland 002","E07000029","Copeland","E12000002","North West",550,630,480,150
+"E02004002","Copeland 003","E07000029","Copeland","E12000002","North West",790,890,690,200
+"E02004003","Copeland 004","E07000029","Copeland","E12000002","North West",670,770,590,170
+"E02004004","Copeland 005","E07000029","Copeland","E12000002","North West",610,690,540,160
+"E02004005","Copeland 006","E07000029","Copeland","E12000002","North West",670,760,590,170
+"E02004006","Copeland 007","E07000029","Copeland","E12000002","North West",800,910,710,210
+"E02004007","Copeland 008","E07000029","Copeland","E12000002","North West",610,690,530,150

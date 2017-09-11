@@ -1,0 +1,23 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02000002","Barking and Dagenham 001","E09000002","Barking and Dagenham","E12000007","London",660,750,580,170
+"E02000003","Barking and Dagenham 002","E09000002","Barking and Dagenham","E12000007","London",750,850,660,190
+"E02000004","Barking and Dagenham 003","E09000002","Barking and Dagenham","E12000007","London",780,880,680,190
+"E02000005","Barking and Dagenham 004","E09000002","Barking and Dagenham","E12000007","London",680,780,600,180
+"E02000007","Barking and Dagenham 006","E09000002","Barking and Dagenham","E12000007","London",620,710,550,160
+"E02000008","Barking and Dagenham 007","E09000002","Barking and Dagenham","E12000007","London",630,720,560,160
+"E02000009","Barking and Dagenham 008","E09000002","Barking and Dagenham","E12000007","London",690,780,600,180
+"E02000010","Barking and Dagenham 009","E09000002","Barking and Dagenham","E12000007","London",710,810,630,180
+"E02000011","Barking and Dagenham 010","E09000002","Barking and Dagenham","E12000007","London",720,810,630,180
+"E02000012","Barking and Dagenham 011","E09000002","Barking and Dagenham","E12000007","London",850,970,750,220
+"E02000013","Barking and Dagenham 012","E09000002","Barking and Dagenham","E12000007","London",710,800,620,180
+"E02000014","Barking and Dagenham 013","E09000002","Barking and Dagenham","E12000007","London",660,750,590,170
+"E02000015","Barking and Dagenham 014","E09000002","Barking and Dagenham","E12000007","London",620,700,540,160
+"E02000016","Barking and Dagenham 015","E09000002","Barking and Dagenham","E12000007","London",650,770,550,210
+"E02000017","Barking and Dagenham 016","E09000002","Barking and Dagenham","E12000007","London",800,910,700,210
+"E02000018","Barking and Dagenham 017","E09000002","Barking and Dagenham","E12000007","London",640,730,560,160
+"E02000019","Barking and Dagenham 018","E09000002","Barking and Dagenham","E12000007","London",740,840,650,180
+"E02000020","Barking and Dagenham 019","E09000002","Barking and Dagenham","E12000007","London",650,740,570,170
+"E02000021","Barking and Dagenham 020","E09000002","Barking and Dagenham","E12000007","London",680,770,600,170
+"E02000022","Barking and Dagenham 021","E09000002","Barking and Dagenham","E12000007","London",570,670,480,180
+"E02000023","Barking and Dagenham 022","E09000002","Barking and Dagenham","E12000007","London",600,690,520,170
+"E02006799","Barking and Dagenham 023","E09000002","Barking and Dagenham","E12000007","London",680,770,600,170

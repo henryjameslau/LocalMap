@@ -1,0 +1,10 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02005203","Fylde 001","E07000119","Fylde","E12000002","North West",820,930,720,200
+"E02005204","Fylde 002","E07000119","Fylde","E12000002","North West",720,820,640,180
+"E02005205","Fylde 003","E07000119","Fylde","E12000002","North West",790,900,700,200
+"E02005206","Fylde 004","E07000119","Fylde","E12000002","North West",650,740,570,170
+"E02005207","Fylde 005","E07000119","Fylde","E12000002","North West",670,770,590,180
+"E02005208","Fylde 006","E07000119","Fylde","E12000002","North West",590,690,510,190
+"E02005209","Fylde 007","E07000119","Fylde","E12000002","North West",670,760,590,170
+"E02005210","Fylde 008","E07000119","Fylde","E12000002","North West",630,730,550,190
+"E02005211","Fylde 009","E07000119","Fylde","E12000002","North West",680,780,590,190

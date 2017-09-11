@@ -1,0 +1,10 @@
+{"ons":{
+"varlabel": ["Total Weekly Income", "Income after housing cost"],
+"varcolour": "BuPu[5]",
+"varname": ["totalweeklyincome", "incomeahc"],
+"varload": "totalweeklyincome",
+"varunit": ["£","£"],
+"varprefix":["",""],
+"average":[760,492],
+"averagelabel":"Eng&Wales Average"
+}}

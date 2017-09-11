@@ -1,0 +1,11 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02005619","Daventry 001","E07000151","Daventry","E12000004","East Midlands",900,1020,790,230
+"E02005620","Daventry 002","E07000151","Daventry","E12000004","East Midlands",870,990,770,220
+"E02005621","Daventry 003","E07000151","Daventry","E12000004","East Midlands",870,990,760,230
+"E02005622","Daventry 004","E07000151","Daventry","E12000004","East Midlands",960,1090,840,250
+"E02005623","Daventry 005","E07000151","Daventry","E12000004","East Midlands",830,940,730,210
+"E02005624","Daventry 006","E07000151","Daventry","E12000004","East Midlands",840,950,730,220
+"E02005625","Daventry 007","E07000151","Daventry","E12000004","East Midlands",610,690,540,150
+"E02005626","Daventry 008","E07000151","Daventry","E12000004","East Midlands",610,700,540,160
+"E02005627","Daventry 009","E07000151","Daventry","E12000004","East Midlands",760,860,670,190
+"E02005628","Daventry 010","E07000151","Daventry","E12000004","East Midlands",800,910,710,200

@@ -1,0 +1,9 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02005417","Boston 001","E07000136","Boston","E12000004","East Midlands",580,660,510,150
+"E02005418","Boston 002","E07000136","Boston","E12000004","East Midlands",520,590,460,140
+"E02005419","Boston 003","E07000136","Boston","E12000004","East Midlands",600,690,530,160
+"E02005420","Boston 004","E07000136","Boston","E12000004","East Midlands",530,600,470,140
+"E02005422","Boston 006","E07000136","Boston","E12000004","East Midlands",620,700,540,160
+"E02005423","Boston 007","E07000136","Boston","E12000004","East Midlands",570,650,500,150
+"E02006864","Boston 008","E07000136","Boston","E12000004","East Midlands",700,790,610,180
+"E02006865","Boston 009","E07000136","Boston","E12000004","East Midlands",660,750,580,170

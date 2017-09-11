@@ -1,0 +1,14 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02005240","Pendle 001","E07000122","Pendle","E12000002","North West",670,760,580,180
+"E02005241","Pendle 002","E07000122","Pendle","E12000002","North West",630,720,550,160
+"E02005242","Pendle 003","E07000122","Pendle","E12000002","North West",710,810,620,180
+"E02005243","Pendle 004","E07000122","Pendle","E12000002","North West",480,550,420,140
+"E02005244","Pendle 005","E07000122","Pendle","E12000002","North West",590,680,520,150
+"E02005245","Pendle 006","E07000122","Pendle","E12000002","North West",800,900,710,200
+"E02005246","Pendle 007","E07000122","Pendle","E12000002","North West",510,580,450,140
+"E02005247","Pendle 008","E07000122","Pendle","E12000002","North West",720,820,640,180
+"E02005248","Pendle 009","E07000122","Pendle","E12000002","North West",470,540,400,140
+"E02005249","Pendle 010","E07000122","Pendle","E12000002","North West",470,530,410,120
+"E02005250","Pendle 011","E07000122","Pendle","E12000002","North West",610,730,510,220
+"E02005251","Pendle 012","E07000122","Pendle","E12000002","North West",670,770,580,190
+"E02005252","Pendle 013","E07000122","Pendle","E12000002","North West",630,720,550,180

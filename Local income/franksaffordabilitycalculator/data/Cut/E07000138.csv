@@ -1,0 +1,12 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02005442","Lincoln 001","E07000138","Lincoln","E12000004","East Midlands",500,570,440,130
+"E02005443","Lincoln 002","E07000138","Lincoln","E12000004","East Midlands",620,700,540,150
+"E02005444","Lincoln 003","E07000138","Lincoln","E12000004","East Midlands",700,800,620,180
+"E02005445","Lincoln 004","E07000138","Lincoln","E12000004","East Midlands",590,670,520,150
+"E02005446","Lincoln 005","E07000138","Lincoln","E12000004","East Midlands",650,760,560,200
+"E02005447","Lincoln 006","E07000138","Lincoln","E12000004","East Midlands",550,630,480,150
+"E02005448","Lincoln 007","E07000138","Lincoln","E12000004","East Midlands",580,660,510,150
+"E02005449","Lincoln 008","E07000138","Lincoln","E12000004","East Midlands",710,810,620,180
+"E02005450","Lincoln 009","E07000138","Lincoln","E12000004","East Midlands",710,800,620,180
+"E02005451","Lincoln 010","E07000138","Lincoln","E12000004","East Midlands",520,590,460,130
+"E02005452","Lincoln 011","E07000138","Lincoln","E12000004","East Midlands",660,750,580,170

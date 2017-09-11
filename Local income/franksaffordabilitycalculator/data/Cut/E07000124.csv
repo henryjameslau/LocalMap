@@ -1,0 +1,9 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"E02005270","Ribble Valley 001","E07000124","Ribble Valley","E12000002","North West",840,950,740,220
+"E02005271","Ribble Valley 002","E07000124","Ribble Valley","E12000002","North West",680,780,600,190
+"E02005272","Ribble Valley 003","E07000124","Ribble Valley","E12000002","North West",630,710,550,160
+"E02005273","Ribble Valley 004","E07000124","Ribble Valley","E12000002","North West",970,1130,840,280
+"E02005274","Ribble Valley 005","E07000124","Ribble Valley","E12000002","North West",800,910,710,200
+"E02005275","Ribble Valley 006","E07000124","Ribble Valley","E12000002","North West",770,870,670,200
+"E02005276","Ribble Valley 007","E07000124","Ribble Valley","E12000002","North West",930,1060,820,240
+"E02005277","Ribble Valley 008","E07000124","Ribble Valley","E12000002","North West",800,920,700,220

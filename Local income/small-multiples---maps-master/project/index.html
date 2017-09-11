@@ -1,0 +1,667 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head><!--
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>-->
+    
+    <title>Small Multiples - Maps</title>
+
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" href="../lib/globalStyle.css" /> 
+    
+	<link rel="stylesheet" href="../lib/styles.css" media="screen">
+    <link rel="stylesheet" href="../lib/jquery-ui-1.10.4.custom.min.css">
+    <link rel="stylesheet" href="../lib/jquery.ui.labeledslider.css">
+    <link rel="stylesheet" href="../lib/style-chosen.css">
+    <link rel="stylesheet" href="../lib/owl.carousel.css">
+    <link rel="stylesheet" href="../lib/owl.theme.default.css">
+    
+    <style type="text/css">
+		
+		
+		@media (min-width: 1000px) {
+			
+			#yearLabel{
+				font-family:"open_sansbold",sans-serif,Helvetica,Arial;
+				font-size:7.5em;
+				color:red;
+				vertical-align:middle;
+				text-align:center;				
+			}
+			
+		} /* end @media (min-width: 1000px) */
+		
+		
+		@media screen and (min-width: 768px) {
+			
+			#yearLabel{
+				font-family:"open_sansbold",sans-serif,Helvetica,Arial;
+				font-size:7.5em;
+				color:blue;
+				vertical-align:middle;
+				text-align:center;				
+			}
+			
+		} /* end @media screen and (min-width: 768px) */
+		
+		
+		@media (min-width: 700px) {
+			
+			#yearLabel{
+				font-family:"open_sansbold",sans-serif,Helvetica,Arial;
+				font-size:7.5em;
+				color:green;
+				vertical-align:middle;
+				text-align:center;				
+			}
+			
+		} /* end @media (min-width: 700px) */
+		
+		
+		
+		
+		@media (max-width: 400px) {
+			
+			#yearLabel{
+				font-family:"open_sansbold",sans-serif,Helvetica,Arial;
+				font-size:7.5em;
+				color:black;
+				vertical-align:middle;
+				text-align:center;				
+			}
+			
+		} /* end @media (min-width: 400px) */
+		
+		
+		@media (min-width: 401px) {
+			
+			#yearLabel{
+				font-family:"open_sansbold",sans-serif,Helvetica,Arial;
+				font-size:3.5em;
+				color:#666;
+				vertical-align:middle;
+				text-align:center;				
+			}
+			
+			
+			.text{
+				font-family:"open_sansbold",sans-serif,Helvetica,Arial;
+				font-size:1.0em;
+				color:green;
+				vertical-align:middle;
+				text-align:center;				
+			}
+			
+		} /* end @media (min-width: 401px) */
+		
+		
+		@media (min-width: 768px) {
+			
+			#yearLabel{
+				font-family:"open_sansbold",sans-serif,Helvetica,Arial;
+				font-size:4.0em;
+				color:#666;
+				vertical-align:middle;
+				text-align:center;				
+			}
+			
+			
+			.text{
+				font-family:"open_sansbold",sans-serif,Helvetica,Arial;
+				font-size:1.0em;
+				color:red;
+				vertical-align:middle;
+				text-align:center;				
+			}
+			
+		} /* end @media (min-width: 768px) */
+		
+
+		
+		#key path {
+		  display: none;
+		  
+		}
+		
+		#key line {
+		  stroke: #000;
+		  shape-rendering: crispEdges;
+		}
+		
+		#key g {
+			font-size:10px;
+			fill:#666;
+		}
+		
+		#key rect {
+			stroke:#666;
+			stroke-width:0.5px;
+			z-index:+1;
+		}		
+		
+		
+	
+    	.line-0 { stroke:#274796; }
+    	.line-1 { stroke:#F90; }
+    	.line-2 { stroke:#F00; }
+		
+		
+    	.circle {
+			fill:#F90;
+			stroke:#F90;
+		}
+		
+		.svgRect{
+			fill: white;	
+			fill-opacity:0.0;
+		}
+		
+		.yearLines {
+			stroke:#666;
+			stroke-width:2px;
+			display:none;
+			stroke-dasharray:10 5;
+		}
+		
+		
+		#header{			
+			height:100px;
+		}/*
+		
+		.text{
+			color:#666;	
+			font-size:16px;
+			font-weight:bold;
+		}*/
+		
+		.area {
+		    fill: lightsteelblue;
+		    stroke-width: 2px;
+		}
+		
+		.area.above {
+			fill: #E89B9B;
+		}
+		
+		.area.below {
+			fill: blue;
+		}
+		
+		.bars{
+			stroke:none;	
+			fill:#274796;
+			fill-opacity:0.5;
+		}
+		
+			
+		.circle:hover,
+		.bars:hover
+		{	
+			cursor:pointer;	
+		}
+		
+		/*
+		#yearLabel{
+			color:#666;	
+			font-size:56px;
+			font-weight:bolder;
+		}*/
+    
+    </style>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script>
+
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37894017-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+    </script>
+	</head>
+
+	<body>
+        
+        <div class="container-fluid">
+               
+            <div class="row">
+                <div class="col-sm-12 col-xs-12" id="header">
+                </div> 
+            </div>
+        
+            <div class="row">
+                <div class="col-sm-12 col-xs-12" id="graphic">
+               		<img src="fallback.png" alt="[Chart]" />
+                </div> 
+            </div>
+                
+            <div class="row">
+                <div class="col-sm-12 col-xs-12" id="keypoints">
+                	<p></p>
+                </div> 
+            </div>
+            
+            <div class="row">  
+                <div class="col-sm-12 col-xs-12" id="footer">
+                	<p></p>
+                </div>       
+            </div>
+
+		</div>
+               
+
+        <script src="../lib/jquery-1.11.1.min.js"></script>
+        <script src="../lib/bootstrap.min.js"></script>
+        <script src="../lib/modernizr.custom.56904.js"></script>
+        <script src="../lib/d3.v3.5.min.js" type='text/javascript'></script>
+        <script src="../lib/pym.js" charset="utf-8"></script>
+	    <script src="../lib/jquery-ui-1.10.4.custom.min.js"></script>    
+    	<script src="../lib/jquery.ui.labeledslider.js"></script>
+        <script src="../lib/chosen.jquery.js" type="text/javascript"></script>
+        <script src="../lib/queue.js" charset="utf-8"></script>
+        <script src="../lib/topojson.js"></script>
+		<script src="../lib/ss.js"></script>   
+          
+        <script>
+            
+            var header = $('#header');
+            var graphic = $('#graphic');
+            var keypoints = $('#keypoints');
+            var footer = $("#footer");
+            var pymChild = null;
+            var height;           
+            var dvc = {}; // global object variable to contain all variables prefixed with 'dvc.'	
+            var pymChild = null;
+            var graphHeight;
+			var headers = [];
+			var mapScale;
+			
+			dvc.data;
+			
+			
+			
+			var colorRanges = [													
+									['rgb(241,238,246)','rgb(189,201,225)','rgb(116,169,207)','rgb(43,140,190)','rgb(4,90,141)'	],	//	earnings
+									['rgb(237,248,251)','rgb(178,226,226)','rgb(102,194,164)','rgb(44,162,95)','rgb(0,109,44)'],	//	jsa
+									['rgb(237,248,251)','rgb(179,205,227)','rgb(140,150,198)','rgb(136,86,167)','rgb(129,15,124)'],	//	degree
+									['rgb(240,249,232)','rgb(186,228,188)','rgb(123,204,196)','rgb(67,162,202)','rgb(8,104,172)'],	//	age
+									['rgb(254,240,217)','rgb(253,204,138)','rgb(252,141,89)','rgb(227,74,51)','rgb(179,0,0)'],	//	non uk born
+									['rgb(241,238,246)','rgb(189,201,225)','rgb(116,169,207)','rgb(43,140,190)','rgb(4,90,141)'],	//	health
+									['rgb(246,239,247)','rgb(189,201,225)','rgb(103,169,207)','rgb(28,144,153)','rgb(1,108,89)'],	//	turnout
+									['rgb(239,243,255)','rgb(189,215,231)','rgb(107,174,214)','rgb(49,130,189)','rgb(8,81,156)'],	//	Other1
+									['rgb(242,240,247)','rgb(203,201,226)','rgb(158,154,200)','rgb(117,107,177)','rgb(84,39,143)']	//	Other2
+								];																						
+	
+
+			
+		
+			/*
+				NAME: 			drawGraphic
+				DESCRIPTION: 	
+				CALLED FROM:	
+				CALLS:			
+				REQUIRES: 		
+				RETURNS: 		
+			*/
+			function drawGraphic()
+			{
+										
+				var threshold_md = 788;
+				var threshold_sm = dvc.optional.mobileBreakpoint;
+				 
+				var innerPadding_values = {
+										"sm":[ 20 , 20 , 30 , 25 ],
+										"md":[ 40 , 20 , 30 , 25 ],
+										"lg":[ 40 , 25 , 45 , 45 ]
+										/* top , right , bottom , left */
+									}
+									
+				var mapScales = [ 2500 , 1750 , 1750 ];
+			
+				//set variables for chart dimensions dependent on width of #graphic
+				if (graphic.width() < threshold_sm) {
+						var margin = {top: dvc.optional.margin_sm[0], right: dvc.optional.margin_sm[1], bottom: dvc.optional.margin_sm[2], left: dvc.optional.margin_sm[3]}; 
+						var chart_width = graphic.width()/* - margin.left - margin.right*/;
+						height = (Math.ceil((chart_width * dvc.optional.aspectRatio_sm[1]) / dvc.optional.aspectRatio_sm[0]) - margin.top - margin.bottom);
+						
+						var innerPadding = { top : innerPadding_values.sm[0] ,  right : innerPadding_values.sm[1] ,  bottom : innerPadding_values.sm[2] ,  left : innerPadding_values.sm[3] }
+						
+						numberRows = parseInt(dvc.essential.numRows_sm_md_lg[0]);
+						numberColumns = parseInt(dvc.essential.numColumns_sm_md_lg[0]);
+						mapScale = mapScales[0];
+												
+				} else if (graphic.width() < threshold_md){
+						var margin = {top: dvc.optional.margin_md[0], right: dvc.optional.margin_md[1], bottom: dvc.optional.margin_md[2], left: dvc.optional.margin_md[3]}; 
+						var chart_width = graphic.width()/* - margin.left - margin.right*/;
+						height = (Math.ceil((chart_width * dvc.optional.aspectRatio_md[1]) / dvc.optional.aspectRatio_md[0]) - margin.top - margin.bottom);
+						
+						var innerPadding = { top : innerPadding_values.md[0] ,  right : innerPadding_values.md[1] ,  bottom : innerPadding_values.md[2] ,  left : innerPadding_values.md[3] }
+						
+						numberRows = parseInt(dvc.essential.numRows_sm_md_lg[1]);
+						numberColumns = parseInt(dvc.essential.numColumns_sm_md_lg[1]);
+						mapScale = mapScales[1];
+												
+				} else {
+						var margin = {top: dvc.optional.margin_lg[0], right: dvc.optional.margin_lg[1], bottom: dvc.optional.margin_lg[2], left: dvc.optional.margin_lg[3]}
+						var chart_width = graphic.width()/* - margin.left - margin.right*/;
+						height = (Math.ceil((chart_width * dvc.optional.aspectRatio_lg[1]) / dvc.optional.aspectRatio_lg[0]) - margin.top - margin.bottom);
+						
+						var innerPadding = { top : innerPadding_values.lg[0] ,  right : innerPadding_values.lg[1] ,  bottom : innerPadding_values.lg[2] ,  left : innerPadding_values.lg[3] }
+						
+						numberRows = parseInt(dvc.essential.numRows_sm_md_lg[2]);
+						numberColumns = parseInt(dvc.essential.numColumns_sm_md_lg[2]);
+						mapScale = mapScales[2];
+												
+				}
+		
+				// clear out existing graphics
+				graphic.empty();
+				keypoints.empty();
+				footer.empty();				
+										
+					
+				//create legend
+				if(dvc.essential.legendLabels.length > 1){
+				var legend = d3.select('#graphic').append('ul')
+								.attr('class', 'key')
+							.selectAll('g')
+								.data(dvc.essential.legendLabels)
+							.enter().append('li')
+	
+						legend.append('b')
+							 .attr("class",function(d,i){return "border" + i})
+						
+						legend.append('label')
+							 .html(function(d,i) { return dvc.essential.legendLabels[i]; });						
+				}		
+							
+ 
+				// calcualte SM graph dimensions, and set up maegins for base SM SVG
+				var graph_unitWidth = (chart_width-1) / numberColumns;
+				var graph_unitHeight = graph_unitWidth;
+				var graph_unitMargins = { top : 5, right : 5 , bottom : 5 , left : 5 };
+
+			
+				var projection = d3.geo.albers()
+					.center([0, 55.4])
+					.rotate([3.2, 1])
+					.parallels([50, 60])
+					.scale(mapScale)
+					.translate([graph_unitWidth / 2, graph_unitHeight / 2]);
+	
+			
+				// Set up a scaling variable effectively tells D3 how to interpret your lat - long coordinates into pixel positions.	
+				var path = d3.geo.path().projection(projection);					
+				
+				
+				// initial SM graph count variable (k = SM number being created	)		
+				var k = 0;
+				var l = 0;
+				var graphLines = {};
+				var currentColoumn;
+				
+				
+				// for each row ... 				
+				for ( var i=1; i<=parseInt(numberRows); i++ ) {	
+				
+					// for each column ... 				
+					for ( var j=1; j<=parseInt(numberColumns); j++ ) {
+						
+						
+						// if graph panel [to draw] is greater than for which data is provided in data files ... 
+						if ( headers[k] === undefined ) { continue; }
+						
+						dvc.numGraphs = k;
+													
+						// create and append small SVG panel for each individual graph, k
+						var svg = d3.select('#graphic')
+							.append('svg')
+							.attr("class" , "graphUnitSVGs")
+							.attr("id" , "svg" + k)
+							.attr("x", function(d,i){ return (i-1)*graph_unitWidth + graph_unitMargins.left; })
+							.attr("y", (j-1)*graph_unitHeight + graph_unitMargins.top )
+							.attr("width", graph_unitWidth )
+							.attr("height", graph_unitHeight )
+							.append("g")
+							.attr("transform", "translate(" + (0) + "," + (0) + ")");	
+							
+												
+						rateById = {};
+						dvc.data.forEach(function(d,i) { rateById[d.PCON14CD] = [d[headers[k]]]; });
+						
+						
+						
+						var values =  dvc.data.map(function(d) { return +d[headers[k]]; }).sort(d3.ascending);
+						breaks = ss.jenks(values, /*5*/dvc.essential.breakDivisions);
+									
+						color = d3.scale.threshold()
+								.domain(breaks.slice(1,5))
+								.range(colorRanges[k]);		
+								
+						createKey(k , graph_unitWidth, graph_unitHeight , margin , innerPadding);							
+						
+								
+						if (graphic.width() < threshold_sm) { d3.selectAll(".keys").style("display", "inline"); }
+						else if (graphic.width() < threshold_md) { d3.selectAll(".keys").style("display", "inline"); }
+						else { d3.selectAll(".keys").style("display", "inline"); }
+							
+					
+						// Use the normal d3 pattern - select all path elements (even though they haven't yet been created)
+						// Then append a path element for every bit of data you've just binded.				
+						svg.append("g")
+							.attr("class", "pcon")
+							.selectAll("path")
+							.data(topojson.feature(dvc.pcon, dvc.pcon.objects.PCONreg).features)
+							.enter()
+							.append("path")
+							.attr("id",function(d){return "reg" + d.properties.PCON14CD})
+							.attr("d" , path )
+							.style("fill", function(d) {return color(rateById[d.properties.PCON14CD]);});								
+						
+						
+						// only draw y-axis labels if drawing graphs in first COLUMN
+						if ( j == 1 ) { 
+							
+							svg.append("text")
+								.attr("class" , "label")
+								.attr("id" , "yAxisLabel" + k)
+								.attr("x" , innerPadding.left/2)
+								.attr("y" , innerPadding.top/2)
+								.style("font-size" , "10px" )
+								.style("font-weight" , "normal" )
+								.style("text-anchor" , "start" )
+								.text(""/*dvc.essential.yAxisLabel*/);
+								
+						} // end if ... 
+						
+						
+						// only draw x-axis labels if drawing graphs in final ROW
+						if ( i == 4 ) {
+							
+							svg.append("text")
+								.attr("class" , "label")
+								.attr("id" , "xAxisLabel" + k)
+								.attr("x" , graph_unitWidth - innerPadding.right)
+								.attr("y" , function (d,i){
+									if (graphic.width() < threshold_sm) { return graph_unitHeight - (0); }
+									else if (graphic.width() < threshold_md) { return graph_unitHeight - (0); }
+									else { return graph_unitHeight - (10); }
+								})
+								.style("font-size" , "10px" )
+								.style("font-weight" , "normal" )
+								.style("text-anchor" , "end" )
+								.text(""/*dvc.essential.xAxisLabel*/);
+								
+						} // end if ... 
+						
+									
+						// draw text in upper right corner of each graph with the associated title from data.csv
+						svg.append("text")/*
+							.data(headers)*/
+							.attr("x" , graph_unitWidth - margin.right - innerPadding.right )
+							.attr("y" , 20 )
+							.style("display" , "inline")
+							.style("pointer-events" , "none")
+							.style("text-anchor" , "end")
+							.text(function(d,i){ return headers[k]; });
+							
+						k++;
+					}
+					
+				} // end for ...
+
+				//create link to source				
+				d3.select("#footer").append("p")
+					.text("Source: ")
+					.append("a")
+					.attr("href", dvc.essential.sourceURL)
+					.attr("target", "_blank")
+					.html(dvc.essential.sourceText);
+			
+			
+							
+				//use pym to calculate chart dimensions	
+				if (pymChild) {
+					pymChild.sendHeight();
+				}
+						
+			
+				return;
+				 
+			
+			 } // end function drawGraphic()
+		 
+			 
+						
+										
+			
+			//then, onload, check to see if the web browser can handle 'inline svg'
+			if (Modernizr)
+			{
+				
+				// open and load configuration file. 					
+				d3.json("config.json", function(error, json)
+				{					
+					// strore read in json data from config file as as global dvc. variable ...	
+					dvc = json;
+											
+					d3.csv(dvc.essential.graphic_data_url, function(error, data) {
+						
+						graphic_data = data;
+						dvc.data = graphic_data;
+						
+						headers = d3.keys(graphic_data[0]).filter(function(key) {
+							
+
+							
+							if ( dvc.essential.fieldsToIgnore.indexOf(key) == -1 ) { return key; }// end else ... 
+							else { } // end else ... 
+						});
+											
+						queue()
+							.defer(d3.json, "geography.json")
+							.defer(d3.csv, "data.csv")
+							.await(ready);						
+					})						
+				})
+			
+			} // end if ... error
+			else
+			{
+				//use pym to create iframe containing fallback image (which is set as default)
+				pymChild = new pym.Child();
+				if (pymChild) { pymChild.sendHeight(); }
+				
+			}// end else ...
+			
+
+		
+			function ready(error, pcon, data) {
+				
+				dvc.pcon = pcon;
+				dvc.data = data;
+					
+				pymChild = new pym.Child({renderCallback: drawGraphic});
+					
+			}// end function ready()
+			
+
+			function createKey(k, graph_unitWidth, graph_unitHeight, margin, innerPadding){
+				
+/*
+				var svgkey = d3.select("#map")
+					.append("svg")
+					.attr("id", "key")
+					.attr("height", 500)
+					.attr("width", 95);
+*/
+					
+				var svgkey = d3.select("#svg" + k)
+					.append("svg")
+					.attr("id", "key")
+					.attr("class", "keys")
+					.attr("height", graph_unitHeight/*-innerPadding.bottom*/)
+					.attr("width", 95);
+				
+				newbreaks = breaks;
+				newbreaks[0] = 0;
+								
+			
+				var color = d3.scale.threshold()
+				   .domain(newbreaks)
+				   .range(colorRanges[k]);
+		
+				y = d3.scale.linear()
+					.domain([0, breaks[5]]) /*range for data*/
+					.range([graph_unitHeight-innerPadding.bottom-innerPadding.top, 0]); /*range for pixels*/
+		
+				var yAxis = d3.svg.axis()
+					.scale(y)
+					.orient("left")
+					.tickSize(15)
+					.tickValues(color.domain());
+		
+				var g = svgkey.append("g")
+					.attr("transform", "translate(45,25)");
+				
+				
+				g.selectAll("rect")
+					.data(color.range().map(function(d, i) {
+					  return {
+						y0: i ? y(color.domain()[i]) : y.range()[0],
+						y1: i < color.domain().length ? y(color.domain()[i+1]) : y.range()[1],
+						z: d
+					  };
+					}))
+					.enter().append("rect")
+					.attr("width", 8)
+					.attr("y", function(d,i) { return d.y1; })
+					.attr("height", function(d) {return d.y0 - d.y1; })
+					.style("fill", function(d) {return d.z; });
+				
+				g.call(yAxis).append("text");
+				
+				
+					
+			}// end function createKey() 
+		
+		</script>
+             
+    
+  </body>
+</html>

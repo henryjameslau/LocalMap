@@ -1,0 +1,12 @@
+"MSOA_code","MSOA_name","LA_code","LA_name","Region_code","Region_name","Total_weekly_income","Upper_confidence_limit","Lower_confidence_limit","Confidence_interval"
+"W02000336","Monmouthshire 001","W06000021","Monmouthshire","W92000004","Wales",730,830,640,190
+"W02000337","Monmouthshire 002","W06000021","Monmouthshire","W92000004","Wales",610,700,540,160
+"W02000338","Monmouthshire 003","W06000021","Monmouthshire","W92000004","Wales",700,800,620,180
+"W02000339","Monmouthshire 004","W06000021","Monmouthshire","W92000004","Wales",660,750,580,170
+"W02000340","Monmouthshire 005","W06000021","Monmouthshire","W92000004","Wales",770,880,670,200
+"W02000341","Monmouthshire 006","W06000021","Monmouthshire","W92000004","Wales",780,890,690,210
+"W02000342","Monmouthshire 007","W06000021","Monmouthshire","W92000004","Wales",950,1090,830,260
+"W02000343","Monmouthshire 008","W06000021","Monmouthshire","W92000004","Wales",630,720,550,160
+"W02000344","Monmouthshire 009","W06000021","Monmouthshire","W92000004","Wales",850,960,740,220
+"W02000345","Monmouthshire 010","W06000021","Monmouthshire","W92000004","Wales",600,680,530,150
+"W02000346","Monmouthshire 011","W06000021","Monmouthshire","W92000004","Wales",880,1010,770,230
