@@ -178,7 +178,6 @@ function getCodes2(lat,lng)    {
 			
 				//fire the function returning statistics
 				//drawStats();
-				
 				gotoArea(data1.result[0].latitude,data1.result[0].longitude);
 				
 				
@@ -724,8 +723,9 @@ function areaName() {
         layer.setStyle({ 
 		  fillColor: '#fff',
           fillOpacity: 0,
-          color:'#fff',
-          weight:0,
+          stroke:true,
+          color:'#000000',
+          weight:1,
           opacity:1,
 		  className: x
         });
@@ -794,14 +794,26 @@ function areaName() {
 				highlightArea();
 				$("#occselect").val(currclass);
 				$("#occselect").trigger("chosen:updated");		
-				
+				displayMSOAData();
 				d3.select(".leaflet-overlay-pane").selectAll(".MSOA").on("mouseout",null).on("mouseover",null);
 				
 				//indexarea = document.getElementById("occselect").selectedIndex;
 				//pymChild.sendMessage('navigate', indexarea + " " + dvc.time);	
 	}
 	
-  
+	function displayMSOAData(){
+	d3.csv("data/data.csv", function(data){
+		
+		dvc.dataObj = data;
+		console.log(MSOA)
+		filtereddata = dvc.dataObj.filter(function(d) {return d.msoa11nm == MSOA});
+		console.log(filtereddata[0].totalweeklyincome)
+
+	})
+
+
+
+	}  
   
   
 	
@@ -864,7 +876,7 @@ function areaName() {
 	function updateBoundaryData(mapBounds) {
 
 		mapBounds = map.getBounds();
-
+		//console.log(mapBounds)
 		var districtsInView = [],
 			regionCodes = Object.keys(regions),
 			regionBounds,
@@ -1335,7 +1347,7 @@ function addRemoveAreas(oldDistricts, newDistricts) {
 
 	function updateMap(config){
 		//var values =  data.map(function(d) { return +eval("d." + dvc.curr); }).filter(function(d) {return !isNaN(d)}).sort(d3.ascending);
-
+console.log(data)
 		// Generate some breaks based on the Jenks algorithm - http://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization
 		if(config.ons.breaks =="jenks")
 			{breaks = ss.jenks(values, 5);}
